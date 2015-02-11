@@ -5,9 +5,8 @@ RUN apt-get update
 RUN apt-get upgrade -y
 
 # install python and PIP
-apt-get install python2.7
-apt-get install cython
-apt-get install python-setuptools
-
-easy_install pip
+RUN apt-get install python2.7
+RUN apt-get install cython
+RUN apt-get install python-setuptools
+RUN easy_install pip
 
