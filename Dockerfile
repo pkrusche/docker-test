@@ -10,6 +10,7 @@ RUN apt-get install python-setuptools -y
 RUN easy_install -U distribute
 RUN easy_install -U pip
 
+# scikit learn and such
 RUN apt-get install build-essential -y
 RUN apt-get install gfortran -y
 RUN apt-get install -y libatlas-base-dev
@@ -17,4 +18,7 @@ RUN apt-get install -y python-imaging libpng-dev libfreetype6 libfreetype6-dev
 RUN apt-get install pkg-config -y
 RUN pip install scipy scikit-learn pandas sympy
 RUN pip install matplotlib
+
+# things for hts-related work
 RUN pip install pybedtools pysam
+RUN pip install bx-python
