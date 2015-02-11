@@ -11,7 +11,7 @@ RUN apt-get install python-setuptools -y
 RUN easy_install pip
 
 RUN apt-get install build-essential -y
-RUN apt-get install gfortran g77 -y
+RUN apt-get install gfortran -y
 RUN apt-get install -y python-imaging libpng-dev libfreetype6 libfreetype6-dev
 
 RUN pip install scipy scikit-learn matplotlib pandas sympy
